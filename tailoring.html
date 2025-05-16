@@ -6,6 +6,7 @@
   <title>خدمات التفصيل - ماركة جلابية</title>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
 
@@ -25,16 +26,18 @@
 </nav>
 
 <div class="container">
-  <h2>اختيار نوع التفصيل</h2>
-  <label for="type">اختر القطعة التي تريد تفصيلها:</label>
-  <select id="type" onchange="showSection()">
-    <option value="">-- اختر --</option>
-    <option value="jalabiya">جلابية</option>
-    <option value="sudairi">سديري</option>
-    <option value="alaallah">على الله</option>
-  </select>
+  <!-- واجهة اختيار نوع اللبسة -->
+  <div class="select-box">
+    <h2>اختر نوع اللبسة التي تريد تفصيلها:</h2>
+    <select id="type" onchange="showSection()">
+      <option value="">-- اختر --</option>
+      <option value="jalabiya">جلابية</option>
+      <option value="sudairi">سديري</option>
+      <option value="alaallah">على الله</option>
+    </select>
+  </div>
 
-  <!-- جلابية -->
+  <!-- لوحة تفصيل الجلابية -->
   <div id="jalabiya" class="section hidden">
     <h3>تفصيل الجلابية</h3>
     <label>الطول:</label>
@@ -52,7 +55,7 @@
     </select>
   </div>
 
-  <!-- سديري -->
+  <!-- لوحة تفصيل السديري -->
   <div id="sudairi" class="section hidden">
     <h3>تفصيل السديري</h3>
     <label>مقاس الكتف:</label>
@@ -69,7 +72,7 @@
     </select>
   </div>
 
-  <!-- على الله -->
+  <!-- لوحة تفصيل على الله -->
   <div id="alaallah" class="section hidden">
     <h3>تفصيل على الله</h3>
     <label>طول على الله:</label>
@@ -90,5 +93,6 @@
 </div>
 
 <script src="js/main.js"></script>
+
 </body>
-</html>
+      </html>
