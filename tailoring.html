@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدمات التفصيل - ماركة جلابية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>خدمات التفصيل - ماركة جلابية</h1>
+</header>
+
+<nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="products.html">المنتجات</a>
+  <a href="tailoring.html">خدمات التفصيل</a>
+  <a href="#">الواقع الافتراضي</a>
+  <a href="#">الدفع والشحن</a>
+  <a href="#">الدعم</a>
+  <a href="#">التفاعل</a>
+  <a href="dashboard.html">لوحة التحكم</a>
+</nav>
+
+<div class="container">
+  <h2>اختيار نوع التفصيل</h2>
+  <label for="type">اختر القطعة التي تريد تفصيلها:</label>
+  <select id="type" onchange="showSection()">
+    <option value="">-- اختر --</option>
+    <option value="jalabiya">جلابية</option>
+    <option value="sudairi">سديري</option>
+    <option value="alaallah">على الله</option>
+  </select>
+
+  <!-- جلابية -->
+  <div id="jalabiya" class="section hidden">
+    <h3>تفصيل الجلابية</h3>
+    <label>الطول:</label>
+    <input type="text" placeholder="أدخل طول الجلابية">
+    <label>العرض:</label>
+    <input type="text" placeholder="أدخل عرض الجلابية">
+    <label>الكتف:</label>
+    <input type="text" placeholder="أدخل عرض الكتف">
+    <label>اليد:</label>
+    <input type="text" placeholder="طول اليد">
+    <label>نوع التفصيل:</label>
+    <select>
+      <option>عريض</option>
+      <option>مسلوب</option>
+    </select>
+  </div>
+
+  <!-- سديري -->
+  <div id="sudairi" class="section hidden">
+    <h3>تفصيل السديري</h3>
+    <label>مقاس الكتف:</label>
+    <input type="text" placeholder="أدخل مقاس الكتف">
+    <label>طول نصف البدن:</label>
+    <input type="text" placeholder="أدخل الطول من الكتف إلى الخصر">
+    <label>عرض الصدر:</label>
+    <input type="text" placeholder="أدخل عرض الصدر">
+    <label>نوع السديري:</label>
+    <select>
+      <option>كسلاوي</option>
+      <option>سواكني</option>
+      <option>بخاخ</option>
+    </select>
+  </div>
+
+  <!-- على الله -->
+  <div id="alaallah" class="section hidden">
+    <h3>تفصيل على الله</h3>
+    <label>طول على الله:</label>
+    <input type="text" placeholder="أدخل الطول">
+    <label>العرض:</label>
+    <input type="text" placeholder="أدخل العرض">
+    <label>طول اليد:</label>
+    <input type="text" placeholder="أدخل طول اليد">
+    <label>طول السروال:</label>
+    <input type="text" placeholder="أدخل طول السروال">
+  </div>
+
+  <button>إرسال الطلب</button>
+</div>
+
+<div class="footer">
+  جميع الحقوق محفوظة - ماركة جلابية 2025
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة تحكم ماركة جلابية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="login-container" id="loginContainer">
+    <div class="login-box">
+      <h2>تسجيل دخول المسؤول</h2>
+      <input type="text" id="username" placeholder="اسم المستخدم">
+      <input type="password" id="password" placeholder="كلمة المرور">
+      <button onclick="login()">دخول</button>
+    </div>
+  </div>
+  
+  <div class="dashboard" id="dashboard">
+    <aside>
+      <h2>لوحة التحكم</h2>
+      <ul>
+        <li onclick="alert('عرض الطلبات')">عرض الطلبات</li>
+        <li onclick="alert('إضافة منتج')">إضافة منتج</li>
+        <li onclick="alert('إدارة التصنيفات')">إدارة التصنيفات</li>
+        <li onclick="alert('عرض العملاء')">عرض العملاء</li>
+        <li onclick="alert('الإعدادات')">الإعدادات</li>
+      </ul>
+    </aside>
+    <main>
+      <header>
+        <h1>مرحباً بك في لوحة التحكم</h1>
+      </header>
+      <div class="card">
+        <h3>إحصائيات عامة</h3>
+        <p>عدد الطلبات اليوم: 15</p>
+        <p>العملاء الجدد: 4</p>
+        <p>المبيعات هذا الشهر: 250,000 جنيه</p>
+      </div>
+      <div class="card">
+        <h3>أحدث الطلبات</h3>
+        <ul>
+          <li>طلب #1025 - جلابية عريض - 25,000 جنيه</li>
+          <li>طلب #1024 - سديري كسلاوي - 18,000 جنيه</li>
+          <li>طلب #1023 - على الله - 22,000 جنيه</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+  
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
